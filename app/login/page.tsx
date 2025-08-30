@@ -6,10 +6,10 @@ export default function Login() {
       <div className="max-w-md w-full space-y-8 p-6">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-            Welcome to Habitual
+            APT - Habit Tracker
           </h1>
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-            Track your habits with a beautiful GitHub-style heatmap
+            Track your habits with a beautiful HeatMap
           </p>
         </div>
         

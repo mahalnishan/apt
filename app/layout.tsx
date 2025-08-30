@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Habitual - GitHub-style Habit Tracker",
-  description: "Track your daily habits with a beautiful GitHub-style heatmap visualization. Build better habits, one day at a time.",
+  title: "Apt - Habit Tracker",
+  description: "Track your daily habits and Build better habits, one day at a time.",
 };
 
 export default function RootLayout({
