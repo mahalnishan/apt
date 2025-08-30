@@ -8,7 +8,7 @@ import { TodayToggles } from '@/components/TodayToggles'
 import { Dashboard } from '@/components/Dashboard'
 
 export default async function Home() {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   
@@ -33,10 +33,10 @@ export default async function Home() {
           <div className="flex justify-between items-center py-4">
             <div>
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Habitual
+                APT - Habit Tracker
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Track your habits with a GitHub-style heatmap
+                Track your habits with a beautiful HeatMap
               </p>
             </div>
             <SignOutButton 

@@ -7,7 +7,7 @@ import type { Habit, Entry } from '@/types/database'
 
 // Habit CRUD operations
 export const createHabit = async (formData: FormData) => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
@@ -40,7 +40,7 @@ export const createHabit = async (formData: FormData) => {
 }
 
 export const updateHabit = async (id: string, updates: Partial<Habit>) => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
@@ -67,7 +67,7 @@ export const updateHabit = async (id: string, updates: Partial<Habit>) => {
 }
 
 export const deleteHabit = async (id: string) => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
@@ -88,7 +88,7 @@ export const deleteHabit = async (id: string) => {
 }
 
 export const getHabits = async (): Promise<Habit[]> => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
@@ -111,7 +111,7 @@ export const getHabits = async (): Promise<Habit[]> => {
 
 // Entry operations
 export const toggleEntry = async (formData: FormData) => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
@@ -176,7 +176,7 @@ export const toggleEntry = async (formData: FormData) => {
 }
 
 export const getEntriesInRange = async (startDate: string, endDate: string): Promise<Entry[]> => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {
@@ -200,7 +200,7 @@ export const getEntriesInRange = async (startDate: string, endDate: string): Pro
 }
 
 export const getHabitEntries = async (habitId: string, startDate: string, endDate: string): Promise<Entry[]> => {
-  const supabase = createClient()
+  const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) {

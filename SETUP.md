@@ -1,4 +1,4 @@
-# Habitual App Setup Guide
+# APT - Habit Tracker Setup Guide
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@
 2. Click "New Project"
 3. Choose your organization
 4. Enter project details:
-   - Name: `habitual-app`
+   - Name: `apt-habit-tracker`
    - Database Password: (generate a secure password)
    - Region: (choose closest to your users)
 5. Click "Create new project"
@@ -161,7 +161,7 @@ Make sure to set these in your deployment platform:
 - **Google OAuth Authentication** - Secure, one-click sign-in
 - **Habit Management** - Create, edit, delete habits with optional quantity tracking
 - **Daily Tracking** - Quick toggles for today's habits
-- **GitHub-style Heatmap** - 52-week visualization with green intensity levels
+- **Beautiful HeatMap** - 52-week visualization with green intensity levels
 - **Responsive Design** - Works beautifully on mobile and desktop
 - **Dark/Light Mode** - Automatic theme detection with pure black dark mode
 - **Accessibility** - Full keyboard navigation and screen reader support

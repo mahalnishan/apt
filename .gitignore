@@ -40,3 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 habitual_supabase_plan.md
+SETUP.md
